@@ -103,10 +103,10 @@ function input() {
       message: `What type of application do you want to create?`,
       default: cmdLnInput.type,
       choices: [{
-         name: `ASP.NET`,
+         name: `.NET Core`,
          value: `asp`
       }, {
-         name: `NodeJS`,
+         name: `Node.js`,
          value: `node`
       }, {
          name: `Java`,

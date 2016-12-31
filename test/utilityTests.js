@@ -13,23 +13,23 @@ const SERVICE_ENDPOINTS_API_VERSION = `3.0-preview.1`;
 describe(`utility`, function () {
    "use strict";
 
-   it(`getDefaultPortMapping java`, function(){
-      var actual = util.getDefaultPortMapping({type: `java`});
+   it(`getDefaultPortMapping java`, function () {
+      var actual = util.getDefaultPortMapping({ type: `java` });
       assert.equal(`8080:8080`, actual);
    });
 
-    it(`getDefaultPortMapping asp`, function(){
-      var actual = util.getDefaultPortMapping({type: `asp`});
+   it(`getDefaultPortMapping asp`, function () {
+      var actual = util.getDefaultPortMapping({ type: `asp` });
       assert.equal(`80:80`, actual);
    });
 
-    it(`getDefaultPortMapping node`, function(){
-      var actual = util.getDefaultPortMapping({type: `node`});
+   it(`getDefaultPortMapping node`, function () {
+      var actual = util.getDefaultPortMapping({ type: `node` });
       assert.equal(`3000:3000`, actual);
    });
 
-    it(`getDefaultPortMapping default`, function(){
-      var actual = util.getDefaultPortMapping({type: `unknown`});
+   it(`getDefaultPortMapping default`, function () {
+      var actual = util.getDefaultPortMapping({ type: `unknown` });
       assert.equal(`80:80`, actual);
    });
 
