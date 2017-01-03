@@ -1,6 +1,6 @@
 {
    "name": "generator-tfs",
-   "version": "0.1.0",
+   "version": "0.1.1",
    "description": "Generates an app with CI/CD in Team Foundation Server",
    "main": "./generators/app/index.js",
    "scripts": {

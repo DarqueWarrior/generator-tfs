@@ -288,18 +288,15 @@ function configGenerators() {
    this.composeWith(`tfs:build`, {
       args: [this.type, this.applicationName, this.tfs,
       this.queue, this.target,
-      this.azureSub, this.azureSubId, this.tenantId, this.servicePrincipalId,
-      this.dockerHost, this.dockerCertPath, this.dockerRegistryId, this.dockerRegistryEmail, this.dockerPorts, this.dockerRegistryPassword,
-      this.servicePrincipalKey,
+      this.dockerHost, this.dockerRegistryId,
       this.pat]
    });
 
    this.composeWith(`tfs:release`, {
       args: [this.type, this.applicationName, this.tfs,
       this.queue, this.target,
-      this.azureSub, this.azureSubId, this.tenantId, this.servicePrincipalId,
-      this.dockerHost, this.dockerCertPath, this.dockerRegistryId, this.dockerRegistryEmail, this.dockerPorts, this.dockerRegistryPassword,
-      this.servicePrincipalKey,
+      this.azureSub,
+      this.dockerHost, this.dockerRegistryId, this.dockerPorts,
       this.pat]
    });
 }
