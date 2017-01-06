@@ -1,3 +1,6 @@
+# This project is no longer maintained.
+## This project has been superseded by [yo Team](https://github.com/DarqueWarrior/generator-team)
+
 # generator-tfs
 
 ## Build status
